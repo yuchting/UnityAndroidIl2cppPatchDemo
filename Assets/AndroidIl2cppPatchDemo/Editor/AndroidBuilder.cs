@@ -179,7 +179,7 @@ public class AndroidBuilder : MonoBehaviour {
         }
         string javaEntranceFile = javaEntranceFiles[0];
         string allJavaText = File.ReadAllText(javaEntranceFile);
-        if (allJavaText.IndexOf("bootstrap") > 0)
+        if (allJavaText.IndexOf("Bootstrap") > 0)
         {
             Debug.Log("UnityPlayerActivity.java already patched.");
             return true;
